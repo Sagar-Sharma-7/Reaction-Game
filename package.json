@@ -1,0 +1,22 @@
+{
+  "name": "reaction-game",
+  "version": "1.0.0",
+  "description": "This is fun game which will test your reaction time",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "game",
+    "js-game",
+    "reaction-game",
+    "time-game",
+    "coding-game",
+    "reaction"
+  ],
+  "author": "Sagar Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

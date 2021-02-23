@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="The Simple Reaction Game to test your reaction time">
+    <meta name="keywords" content="HTML, cheatsheet, codes">
+    <meta name="author" content="Sagar Sharma">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/reaction game.css">
+
+    <title>Reaction Time</title>
+  </head>
+  <body>
+      <div class="container">
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Score:</strong><span id="pervious-score-para"></span>
+          </div>
+
+          <br>
+          <p id="p-1">Test your reaction time.</p>
+          <button class="btn btn-outline-dark btn-lg btn-block" id="start">Start</button>
+          <button class="btn btn-outline-dark btn-lg btn-block" id="play-again">Play again!</button>
+          <br>
+
+          <div id="warning" class="alert alert-warning" role="alert">
+            <strong>Note:</strong> After clicking the start button a red box will appear, wait for turning the box to green. Then tap anywhere on box. 
+          </div>
+
+          <div id="box">
+            <p id="info-para"></p>
+        </div>
+
+        <div id="green-box">
+          <p id="result-para"></p>
+        </div>
+
+
+        
+        </div>
+        <footer>
+          <a href="https://github.com/Sagar-Sharma-7" target="_blank" title="github">Contribute to my 	&nbsp; <i class="fab fa-github"></i></a>
+  
+          <p>Made with <i class="fas fa-heart" title="love"></i> by Sagar Sharma</p>
+          
+        </footer>
+        
+       
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/reaction game.js"></script>
+  </body>
+</html>
