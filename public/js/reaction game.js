@@ -1,66 +1,59 @@
+const infoPara = document.querySelector("#info-para");
+const start = document.querySelector("#start");
+const score = document.querySelector("#pervious-score-para");
+const result = document.querySelector("#result-para");
+
+// jquery
 $(document).ready(function() {
 
-
-    // start button
     $("#start").click(function() {
-
-
+        infoPara.innerHTML = "Wait for green box!";
         $(".alert-dark").slideDown("slow");
         $("#box").slideDown("slow");
-        document.getElementById("info-para").innerHTML = "Wait for green box!"
         $("#warning").slideUp("slow");
         $("#start").slideUp("slow");
        
 
-        var nowtime = new Date().getTime();
+        let nowtime = new Date().getTime();
+        let randomtime = Math.floor(Math.random() * 9999) + 1000;
         console.log(nowtime);
-
-        var randomtime = Math.floor(Math.random() * 9999) + 1000;
         console.log(randomtime);
 
-        
-        var timeout = setTimeout(() => {
+        // timer
+        let timeout = setTimeout(() => {
             $("#box").hide(1);
             $("#green-box").show(1);
-            document.getElementById("result-para").innerHTML = "Tap Now!"
+            result.innerHTML = "Tap Now!"
         }, randomtime);
 
+
         $("#box").click(function() {
-            document.getElementById("info-para").innerHTML = "You tapped on red box, now you need to start again."
             clearTimeout(timeout);
-            $("#start").slideDown(3500)
-            $("#box").slideUp(3500);
-            $("#warning").slideDown(3500);
+            $("#start").slideDown(1000);
+            start.innerHTML = "You tapped on red box, Click to restart";
+            $("#box").slideUp(1000);
+            $("#warning").slideDown(1000);    
         });
 
         $("#green-box").click(function() {
             $(".alert-success").slideDown(500);
-            var clickedtime = new Date().getTime();
+            let clickedtime = new Date().getTime();
             console.log(clickedtime);
-            var result = clickedtime - ( nowtime + randomtime);
-            console.log(result);
-            finalresult = document.getElementById("result-para").innerHTML = " " +result/1000 + " seconds";
-            document.getElementById("pervious-score-para").innerHTML = finalresult
-            $("#green-box").slideUp(3000);
+            let result = clickedtime - ( nowtime + randomtime);
+            score.innerHTML =" " +result/1000 + " seconds";
+            $("#green-box").slideUp(1000);
             $("#play-again").slideDown("slow");
 
-            $("#green-box").click(function(){
-                $(this).slideUp(1);
-            });
 
-
-        $("#play-again").click(function() {
-           
-            document.getElementById("pervious-score-para").innerHTML = "";
+        $("#play-again").click(function() {         
+            score.innerHTML = "";
             $("#play-again").slideUp("slow");
             $("#green-box").slideUp("slow");
             $("#start").slideDown("slow");
             $("#warning").slideDown("slow");
             $(".alert-success").slideUp("slow");
+            start.innerHTML = "Start";
         });
-
-    });
-
-    
-})
+    }); 
+});
 });
