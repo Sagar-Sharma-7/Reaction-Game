@@ -1,4 +1,3 @@
-## Hi, I'm Sagar Sharma
 ## A Simple Reaction Game
 <br>
 
