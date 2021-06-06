@@ -2,6 +2,12 @@ const infoPara = document.querySelector("#info-para");
 const start = document.querySelector("#start");
 const score = document.querySelector("#pervious-score-para");
 const result = document.querySelector("#result-para");
+const p1 = document.querySelector("#p-1");
+const warning = document.querySelector("#warning");
+
+// text content
+p1.innerHTML = "Test your reaction time.";
+warning.innerHTML = '<strong>Note:</strong> After clicking the start button a red box will appear, wait for turning the box to green. Then tap anywhere on box. ';
 
 // jquery
 $(document).ready(function() {
