@@ -1,8 +1,7 @@
-## Hi, I'm Sagar Sharma
 ## A Simple Reaction Game
 <br>
 
-## [View Demo]()
+## [View Demo](https://sagar-sharma-7.github.io/Reaction-Game/public/index.html)
 
 If you have any crazy idea then please pull request...
 
@@ -74,7 +73,7 @@ app.listen(port, () => {
  ## Cloning this repositary using command line
  1. Open **Git Bash**.
  1. Change the current working directory to the location where you want the cloned directory.
- 1. Type `git clone https://github.com/Sagar-Sharma-7/landing-page.github.io.git`
+ 1. Type `git clone https://github.com/Sagar-Sharma-7/Reaction-Game.git`
  1. Press **Enter** to create the clone of this repositary.
  `
 
