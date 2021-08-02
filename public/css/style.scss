@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+$green: rgb(10, 228, 10);
+$text-color: #fff;
 
 body{
     font-family: 'Langar', cursive;
@@ -29,7 +31,7 @@ body{
 }
 
 #green-box{
-    background-color: rgb(10, 228, 10);
+    background-color: $green;
     width: 100%;
     height: 300px;
     display: none;
@@ -38,14 +40,14 @@ body{
 
 #box p{
     font-size: 30px;
-    color: #fff;
+    color: $text-color;
     text-align: center;
     padding-top: 120px;
 }
 
 #green-box p{
     font-size: 30px;
-    color: #fff;
+    color: $text-color;
     text-align: center;
     padding-top:120px ;
 }
@@ -56,20 +58,19 @@ body{
 
 footer{
     background-color: #151515;
-    color: #fff;
+    color: $text-color;
     width: 100%;
     text-align: center;
     padding: 10px;
     position: absolute;
     bottom: 0px;
-}
-
-footer a{
-    color: #fff;
-}
-footer a:hover{
-    color: rgb(40, 255, 40);
-}
-.fa-heart{
-    color: red;
+    a{
+        color: $text-color;
+    }
+    &:hover{
+        color: $green;
+    }
+    .fa-heart{
+        color: red;
+    }
 }
