@@ -7,7 +7,7 @@ const warning = document.querySelector("#warning");
 
 // text content
 p1.innerHTML = "Test your reaction time.";
-warning.innerHTML = '<strong>Note:</strong> After clicking the start button a red box will appear, wait for turning the box to green. Then tap anywhere on box. ';
+warning.innerHTML = '<strong>Note:</strong> After clicking on the start button, a red box will appear, hold back for the red box to change to green. After that, tap anywhere on the green box. ';
 
 // jquery
 $(document).ready(function() {
